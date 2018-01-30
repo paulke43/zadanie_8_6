@@ -10,8 +10,12 @@ console.log('Wynik to: ' + value)
 
 if (value > 0) {
     alert('Wynik dodatni');
-} else if (value <= 0) {
-    alert('Wynik równy zero!');
-} else {
-    alert('Wstaw odpowiednie wartości');
+}	else if (value < 0) {
+	alert('Wynik ujemny');
+}	else if (value === 0) {
+    alert('Wynik równy zero');
+} 	else if (isNaN(value)) {
+    alert('To nie jest liczba!');
+}	else {
+	alert('Wstaw odpowiednie wartości!');
 }
